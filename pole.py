@@ -1,4 +1,4 @@
-# Learn the Cart-Pole problem through basic Neural Network
+# Solving Cart-Pole problem with Neural Net
 # The input to the Network would be pole position
 # output will be 0 or 1 (i.e. left or right)
 
