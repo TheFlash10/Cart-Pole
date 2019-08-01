@@ -30,15 +30,15 @@ def learn():
     for _ in range(start_games):
         score = 0
         game_mem = []
-        prev_observationervation = []
+        prev_observation = []
 
         for _ in range(steps):
             action = random.randrange(0,2)
             observation, reward, done, info = e.step(action)
             
-            if len(prev_observationervation) > 0 :
-                game_mem.append([prev_observationervation, action])
-            prev_observationervation = observation
+            if len(prev_observation) > 0 :
+                game_mem.append([prev_observation, action])
+            prev_observation = observation
             score+=reward
             if done: break
 
